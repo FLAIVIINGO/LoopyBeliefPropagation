@@ -8,10 +8,13 @@ was used to calculate the energy of all costs that link an image given and some 
 ### Sample Image of Books Using Loopy Belief Propagation
 ![Books](output.png)
 ## Belief Propagation Second Algorithm
-There was open source software for this exact problem which wound up being must faster than I had originally started off with. This implementation was used as an alternative comparison for faster and more accurate results. I was able to make a few adjustments to make it run quite a bit faster. In the update_msg function, I was able to replace a for loop with numpy broadcasting and shaved off a good 8-9 seconds during runtime. I also used scikit skopt Optimizer to find an optimal number of disparity values, a lambda scalar value, and a number of iterations. This allowed for more accurate results when comparing against the deep learning algorithm and the ground truth disparity maps.
+There was open source [software](https://github.com/aperezlebel/StereoMatching/tree/master) for this exact problem which wound up being must faster than I had originally started off with. This implementation was used as an alternative comparison for faster and more accurate results. I was able to make a few adjustments to make it run quite a bit faster. In the update_msg function, I was able to replace a for loop with numpy broadcasting and shaved off a good 8-9 seconds during runtime. I also used scikit skopt Optimizer to find an optimal number of disparity values, a lambda scalar value, and a number of iterations. This allowed for more accurate results when comparing against the deep learning algorithm and the ground truth disparity maps.
 ### Sample Image of Books Using the Second Implementation of Belief Propagation
 ![Books](disparity_map_1.png)
 ### Comparisons of Belief Propagation With Ground Truth
 ![Maps](compares_belief.PNG)
 ## Deep Learning Stereo Vision
 Deep learning algorithm for stereo vision was used as a comparison. It did perform much faster than anticipated and was incredibly accurate. Again, it was compared to the previous algorithms via SSIM. [GitHub](https://github.com/JiaRenChang/PSMNet/tree/master)
+![Maps](compares_belief2.PNG)
+##Results
+The equation used to draw comparisons between the deep learning algorithm and the open source belief propagation software were quite close. On average, the RMSE score for belief propagation was 10.4568. The deep learning algorithm was averaged at 10.2238. However, the average time of the belief propagation algorithm was at around 9 seconds, while the deep learning was either 2 seconds or slightly under. This makes up for a drastic difference in time, but quite similar with this testing approach. In the future, I would find it helpful to test for other metrics such as occlusion which I didn't have time for. I would also like to use a larger data set and work more on my own implementation of the belief propagation algorithm. 
