@@ -26,3 +26,10 @@ Deep learning algorithm for stereo vision was used as a comparison. It did perfo
 The equation used to draw comparisons between the deep learning algorithm and the open source belief propagation software were quite close. On average, the RMSE score for belief propagation was 10.4568. The deep learning algorithm was averaged at 10.2238. However, the average time of the belief propagation algorithm was at around 9 seconds, while the deep learning was either 2 seconds or slightly under. This makes up for a drastic difference in time, but quite similar with this testing approach. In the future, I would find it helpful to test for other metrics such as occlusion which I didn't have time for. I would also like to use a larger data set and work more on my own implementation of the belief propagation algorithm. 
 ## Instructions to Run
 Clone this repository to your local machine. Create a virtual environment for Python. `pip install -r requirements.txt` Start up a jupyter notebook `jupyter notebook` and start up BeliefPropagation.ipynb
+## Resources
+[MRF in Images](https://nghiaho.com/?page_id=1366)
+[](https://arxiv.org/abs/2209.12000v1)
+[](https://www.cs.cornell.edu/~dph/papers/bp-cvpr.pdf)
+[](https://ieeexplore.ieee.org/document/6844383)
+[](https://ieeexplore.ieee.org/document/8654665)
+[](https://cs.brown.edu/people/pfelzens/papers/bp-long.pdf)
