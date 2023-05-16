@@ -27,9 +27,15 @@ The equation used to draw comparisons between the deep learning algorithm and th
 ## Instructions to Run
 Clone this repository to your local machine. Create a virtual environment for Python. `pip install -r requirements.txt` Start up a jupyter notebook `jupyter notebook` and start up BeliefPropagation.ipynb
 ## Resources
+### Resource 1
 [MRF in Images](https://nghiaho.com/?page_id=1366)
-[](https://arxiv.org/abs/2209.12000v1)
-[](https://www.cs.cornell.edu/~dph/papers/bp-cvpr.pdf)
-[](https://ieeexplore.ieee.org/document/6844383)
-[](https://ieeexplore.ieee.org/document/8654665)
-[](https://cs.brown.edu/people/pfelzens/papers/bp-long.pdf)
+### Resource 2
+[Arxiv](https://arxiv.org/abs/2209.12000v1)
+### Resource 3
+[Cornell](https://www.cs.cornell.edu/~dph/papers/bp-cvpr.pdf)
+### Resource 4
+[IEEE doc1](https://ieeexplore.ieee.org/document/6844383)
+### Resource 5
+[IEEE doc 2](https://ieeexplore.ieee.org/document/8654665)
+### Resource 6
+[Brown](https://cs.brown.edu/people/pfelzens/papers/bp-long.pdf)
